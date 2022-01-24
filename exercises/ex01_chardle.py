@@ -1,19 +1,18 @@
-'''EX01 - Chardle - A cute step toward Wordle.'''
+"""EX01 - Chardle - A cute step toward Wordle."""
 
 __author__ = "730227972"
 
 word_5: str = str(input("Enter a 5-character word: "))
 
 if len(word_5) != 5:
-    print("Error: Word must contain 5 characters")
-    exit() 
+    exit(print("Error: Word must contain 5 characters"))
 
 character_1: str = str(input("Enter a single character: "))
-print("Searching for " + character_1 + " in " + word_5) 
 
 if len(character_1) != 1:
-    print("Error: Character must be a single character.")
-    exit()
+    exit(print("Error: Character must be a single character."))
+
+print("Searching for " + character_1 + " in " + word_5)
 
 matching_indices: int = 0 
 
