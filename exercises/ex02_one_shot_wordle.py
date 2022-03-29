@@ -15,8 +15,8 @@ guess_int: int = len(guess_str)
 # Making sure guess has the correct number of letters. 
 
 while guess_int != (len(secret_word)): 
-    guess_str: str = str(input(f"That was not {length_secret} letters! Try again: "))
-    guess_int: int = len(guess_str) 
+    guess_str = str(input(f"That was not {length_secret} letters! Try again: "))
+    guess_int = len(guess_str) 
 
 # Initializing named constants. 
 
@@ -38,26 +38,26 @@ index_secret: str = str(secret_word[index_int])
 
 while index_int < len(secret_word):
     if index_guess == index_secret:
-        result_emoji: str = str(f"{result_emoji}{GREEN_BOX}") 
+        result_emoji = str(f"{result_emoji}{GREEN_BOX}") 
     else:
         alt_index: int = 0 
         match: bool = False 
         alt_index_secret: str = str(secret_word[alt_index])
         while alt_index < len(secret_word):
             if index_guess == alt_index_secret:
-                match: bool = True 
-            alt_index: int = alt_index + 1
+                match = True 
+            alt_index = alt_index + 1
             if alt_index <= (len(secret_word) - 1):
-                alt_index_secret: str = str(secret_word[alt_index])
+                alt_index_secret = str(secret_word[alt_index])
         if not match:
-            result_emoji: str = str(f"{result_emoji}{WHITE_BOX}")
+            result_emoji = str(f"{result_emoji}{WHITE_BOX}")
         else: 
-            result_emoji: str = str(f"{result_emoji}{YELLOW_BOX}") 
+            result_emoji = str(f"{result_emoji}{YELLOW_BOX}") 
 
-    index_int: int = index_int + 1
+    index_int = index_int + 1
     if index_int <= (len(secret_word) - 1):
-        index_guess: str = str(guess_str[index_int])
-        index_secret: str = str(secret_word[index_int])
+        index_guess = str(guess_str[index_int])
+        index_secret = str(secret_word[index_int])
 
 # Printing results of checked indices. 
 
