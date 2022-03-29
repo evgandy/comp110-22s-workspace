@@ -2,7 +2,7 @@
 
 __author__ = "730227972" 
 
-# Defining the function that scans the guess for characters found in the secret.
+# Defining the function that scans the user's guess for characters found in the secret.
 
 
 def contains_char(word: str, letter: str) -> bool: 
